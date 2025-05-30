@@ -75,10 +75,10 @@ PolicyManager.register({
 <p style="padding:0 6rem;font-size:1.1em">
   In November 2024, Ottawa City Council voted down a proposal to create an Affordable Housing Acquisition Fund. The plan would have redirected Vacant Unit Tax revenue to help non-profits purchase aging rentals and preserve affordability. By enacting the the policy, you perserve around 300 units and save an estimated $4 M annually in redevelopment costs, though it requires a $20 M up‑front investment.
 </p>
-</p>
 
 <div class="centered-btn">
  <button class="continue-button" onclick="SugarCube.Engine.play('BuildCanadaHomes');">Continue</button>
+ <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
 </div>
 
 
@@ -1398,7 +1398,43 @@ zoom: 1.1;
     <div class="impact-box" data-index="1">
       <div class="impact-title">Economic Growth</div>
       <div class="impact-content">
-        <div id="impact-chart-1" class="impact-graph"></div>
+        <span class="impact-number">+0.3%</span>
+      </div>
+    </div>
+    <div class="impact-box" data-index="2">
+      <div class="impact-title">Public Opinion</div>
+      <div class="impact-content">
+        <span class="impact-number">+8%</span>
+      </div>
+    </div>
+    <div class="impact-box" data-index="3">
+      <div class="impact-title">Service Coordination</div>
+      <div class="impact-content">
+        <div class="impact-widget">★ ★ ★ ★ ☆</div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3>Project Impact</h3>
+<p>
+    This student-led event raises awareness and funds for youth homelessness in Toronto through an engaging, community-based fundraiser. 
+    It strengthens relationships between students and local organizations, encourages grassroots advocacy, and increases visibility 
+    around homelessness as a public health and policy issue.
+</p>
+<div class="break"> </div>
+
+<div class="centered-btn">
+  <button class="continue-button" onclick="SugarCube.Engine.play('PIT1');">Continue</button>
+  <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
+</div>
+
+:: C4Project2 {"position":"500,900","size":"100,100"}
+<div class="policy-impact-screen" >
+  <div class="impact-container">
+    <div class="impact-box" data-index="1">
+      <div class="impact-title">Economic Growth</div>
+      <div class="impact-content">
+        <span class="impact-number">+0.1%</span>
       </div>
     </div>
     <div class="impact-box" data-index="2">
@@ -1415,13 +1451,53 @@ zoom: 1.1;
     </div>
   </div>
 </div>
-<p style="padding: 0 6rem;">
-  C4 Project Impact short description. TODO: source from groups
+<h3>Project Impact</h3>
+<p>
+    This initiative provides emergency backpack kits with weather-resistant supplies for people experiencing homelessness, 
+    particularly during climate-related events. It addresses immediate survival needs and promotes climate-resilient planning 
+    in urban homeless services.
 </p>
 <div class="break"> </div>
 
 <div class="centered-btn">
   <button class="continue-button" onclick="SugarCube.Engine.play('PIT1');">Continue</button>
+  <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
+</div>
+
+:: C4Project3 {"position":"500,900","size":"100,100"}
+<div class="policy-impact-screen" >
+  <div class="impact-container">
+    <div class="impact-box" data-index="1">
+      <div class="impact-title">Economic Growth</div>
+      <div class="impact-content">
+        <span class="impact-number">+0.5%</span>
+      </div>
+    </div>
+    <div class="impact-box" data-index="2">
+      <div class="impact-title">Public Opinion</div>
+      <div class="impact-content">
+        <span class="impact-number">+6%</span>
+      </div>
+    </div>
+    <div class="impact-box" data-index="3">
+      <div class="impact-title">Service Coordination</div>
+      <div class="impact-content">
+        <div class="impact-widget">★ ★ ★ ★ ☆</div>
+      </div>
+    </div>
+  </div>
+</div>
+<h3>Project Impact</h3>
+<p>
+    This project connects local farmers with shelters and community kitchens to redistribute unsold produce. 
+    It reduces food waste while improving nutrition and food security for unhoused populations, building a stronger 
+    local food ecosystem in the process.
+</p>
+<div class="break"> </div>
+
+<div class="centered-btn">
+  <button class="continue-button" onclick="SugarCube.Engine.play('PIT1');">Continue</button>
+  <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
 </div>
 
 
@@ -1796,8 +1872,8 @@ zoom: 1.1;
 
     <!-- Buttons with individual project policy activation -->
     <button class="button" onclick="project1();">In Person Fundraiser</button>
-    <button class="button" onclick="project1();">Climate Crisis Backpack Kit </button>
-    <button class="button" onclick="project1();">Farmer Product Connection</button>
+    <button class="button" onclick="project2();">Climate Crisis Backpack Kit </button>
+    <button class="button" onclick="project3();">Farmer Product Connection</button>
   </div>
 
   <!-- Project Scripts -->
@@ -1805,6 +1881,14 @@ zoom: 1.1;
    function project1() {
 
     SugarCube.Engine.play("C4Project1");
+  }
+   function project2() {
+
+    SugarCube.Engine.play("C4Project2");
+  }
+   function project3() {
+
+    SugarCube.Engine.play("C4Project3");
   }
   </script>
 </div>
@@ -3748,6 +3832,7 @@ PolicyManager.register({
 
 <div class="centered-btn">
  <button class="continue-button" onclick="SugarCube.Engine.play('BuildCanadaHomes');">Continue</button>
+ <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
 </div>
 
 
@@ -5087,6 +5172,7 @@ PolicyManager.register({
 
 <div class="centered-btn">
  <button class="continue-button" onclick="SugarCube.Engine.play('BuildCanadaHomes');">Continue</button>
+ <button class="continue-button" onclick="SugarCube.Engine.backward();">Back</button>
 </div>
 
 
@@ -7113,6 +7199,28 @@ body {
 
 
 :: ShelterZones {"position":"400,300","size":"100,100"}
+<style>
+button {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 0.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+  margin: 0.3rem !important;
+  position: relative !important;
+  top: -0.25rem !important;
+  text-align: center !important;
+  margin: 0.3rem auto; /* centers it */
+  position: relative;
+
+}
+</style>
 <<script>>
 PolicyManager.register({
   name: "Permit Shelters in All Urban Zones",
@@ -7181,6 +7289,9 @@ PolicyManager.register({
 <p style="padding:0 6rem;font-size:1.1em">In February 2025, Ottawa City Council passed a motion permitting shelters in all urban zones, removing zoning barriers that had delayed new sites for months. This expands system capacity, speeds up approvals, and unlocks access to new provincial and federal funds. Advocates welcome the change, though some warn it must be paired with long-term housing investments to avoid deepening reliance on temporary shelter. </p>
 <div class="centered-btn">
  <button class="continue-button" onclick="SugarCube.Engine.play('BuildCanadaHomes');">Continue</button>
+ <<button "Back">>
+    <<run Engine.backward()>>
+  <</button>>
 </div>
 
 
@@ -8471,8 +8582,12 @@ window.Util = {
   },
 };
 
+State.variables.policies = State.variables.policies || [];
+
 window.PolicyManager = {
-  active: [],
+  get active() {
+    return State.variables.policies;
+  },
   has(name) {
     return this.active.some((p) => p.name === name);
   },
@@ -8507,7 +8622,7 @@ window.PolicyManager = {
       systemCapacity: v.systemCapacity,
       politicalCapital: v.politicalCapital,
     });
-    this.active = this.active.filter((p) => {
+    State.variables.policies = this.active = this.active.filter((p) => {
       p.age++;
       v.budget -= p.costPerTurn;
       p.tick(v, p.age);
